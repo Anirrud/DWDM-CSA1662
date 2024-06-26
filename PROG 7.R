@@ -1,0 +1,8 @@
+names<-c("goku","ichigo","zoro","madara","aizen")
+age<-c(17,20,21,22,22)
+marks<-c(90,90,91,92,95)
+df<-data.frame(names,age,marks)
+summary_age=summary(df$age)
+summary_marks=summary(df$marks)
+df<-data.frame(summary_age,summary_marks)
+write.csv(df,"datafr")
